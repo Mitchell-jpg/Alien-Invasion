@@ -1,4 +1,6 @@
 import pygame
+from pathlib import Path
+import json
 
 class GameStats:
     """Tracks stats for the game"""
@@ -10,6 +12,7 @@ class GameStats:
 
         # High scores should not be reset
         self.high_score = 0
+        
 
     def reset_stats(self):
         """initialize stats that can change during gameplay"""

@@ -1,6 +1,8 @@
 import pygame.font
 from pygame.sprite import Group
 from ship import Ship
+from pathlib import Path
+import json
 
 class Scoreboard:
     """A class to report scoring information"""
@@ -21,6 +23,7 @@ class Scoreboard:
         self.prep_score()
         self.prep_high_score()
         self.prep_level()
+        self.prep_ships()
 
     def prep_score(self):
         """Turn score into rendered image"""
